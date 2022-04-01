@@ -30,13 +30,31 @@ public class ModBlocks {
             .strength(3.0f, 3.0f)
             .sounds(BlockSoundGroup.STONE)
     );
+    public static final Block DEEPSLATE_COBALT_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .requiresTool()
+            .strength(3.0f, 3.0f)
+            .sounds(BlockSoundGroup.STONE)
+    );
     public static final Block LEAD_ORE = new Block(FabricBlockSettings
             .of(Material.STONE)
             .requiresTool()
             .strength(3.0f, 3.0f)
             .sounds(BlockSoundGroup.STONE)
     );
+    public static final Block DEEPSLATE_LEAD_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .requiresTool()
+            .strength(3.0f, 3.0f)
+            .sounds(BlockSoundGroup.STONE)
+    );
     public static final Block SILVER_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .requiresTool()
+            .strength(3.0f, 3.0f)
+            .sounds(BlockSoundGroup.STONE)
+    );
+    public static final Block DEEPSLATE_SILVER_ORE = new Block(FabricBlockSettings
             .of(Material.STONE)
             .requiresTool()
             .strength(3.0f, 3.0f)
@@ -130,8 +148,11 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "tin_ore"), TIN_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "zinc_ore"), ZINC_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "cobalt_ore"), COBALT_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "deepslate_cobalt_ore"), DEEPSLATE_COBALT_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "lead_ore"), LEAD_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "deepslate_lead_ore"), DEEPSLATE_LEAD_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "silver_ore"), SILVER_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "titanium_ore"), TITANIUM_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "nickel_ore"), NICKEL_ORE);

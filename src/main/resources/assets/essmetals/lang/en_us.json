@@ -6,8 +6,10 @@
   "item.essmetals.lead_ingot": "Lead Ingot",
   "item.essmetals.silver_ingot": "Silver Ingot",
   "item.essmetals.zinc_ingot": "Zinc Ingot",
-
-
+  "item.essmetals.nickel_ingot": "Nickel Ingot",
+  "item.essmetals.aluminium_ingot": "Aluminium Ingot",
+  "item.essmetals.titanium_ingot": "Titanium Ingot",
+  "item.essmetals.tungsten_ingot": "Tungsten Ingot",
 
   "block.essmetals.tin_ore": "Tin Ore",
   "block.essmetals.zinc_ore": "Zinc Ore",
