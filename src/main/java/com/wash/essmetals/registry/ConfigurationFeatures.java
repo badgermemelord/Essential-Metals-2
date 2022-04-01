@@ -32,9 +32,9 @@ public class ConfigurationFeatures {
     public static PlacedFeature OVERWORLD_COBALT_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_COBALT_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(3),
+                    CountPlacementModifier.of(4),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(32))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-8), YOffset.fixed(24))
             ));
     //Tin
     private static ConfiguredFeature<?, ?> OVERWORLD_TIN_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
@@ -46,7 +46,7 @@ public class ConfigurationFeatures {
     public static PlacedFeature OVERWORLD_TIN_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_TIN_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(8),
+                    CountPlacementModifier.of(6),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(16), YOffset.fixed(64))
             ));
@@ -60,7 +60,7 @@ public class ConfigurationFeatures {
     public static PlacedFeature OVERWORLD_ZINC_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_ZINC_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(6),
+                    CountPlacementModifier.of(4),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(32), YOffset.fixed(48))
             ));
@@ -76,7 +76,7 @@ public class ConfigurationFeatures {
             Arrays.asList(
                     CountPlacementModifier.of(6),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(48))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-32), YOffset.fixed(16))
             ));
     //Silver
     private static ConfiguredFeature<?, ?> OVERWORLD_SILVER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
@@ -90,7 +90,7 @@ public class ConfigurationFeatures {
             Arrays.asList(
                     CountPlacementModifier.of(4),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(-32), YOffset.fixed(32))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(32))
             ));
     //Nickel
     private static ConfiguredFeature<?, ?> OVERWORLD_NICKEL_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
@@ -104,7 +104,7 @@ public class ConfigurationFeatures {
             Arrays.asList(
                     CountPlacementModifier.of(5),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(-32), YOffset.fixed(32))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(16), YOffset.fixed(42))
             ));
     //Bauxite
     private static ConfiguredFeature<?, ?> OVERWORLD_BAUXITE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
@@ -116,9 +116,9 @@ public class ConfigurationFeatures {
     public static PlacedFeature OVERWORLD_BAUXITE_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_BAUXITE_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(8),
+                    CountPlacementModifier.of(12),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(64), YOffset.fixed(96))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(86), YOffset.fixed(172))
             ));
     //End Ores
     //Titanium
@@ -148,20 +148,6 @@ public class ConfigurationFeatures {
                     CountPlacementModifier.of(10),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(48))
-            ));
-    //Test1
-    private static ConfiguredFeature<?, ?> END_COBALT_ORE_CONFIGURED_FEATURE = new ConfiguredFeature(
-            Feature.ORE, new OreFeatureConfig(
-            new BlockMatchRuleTest(Blocks.END_STONE),
-            ModBlocks.COBALT_ORE.getDefaultState(),
-            6
-    ));
-    public static PlacedFeature END_COBALT_ORE_PLACED_FEATURE = new PlacedFeature(
-            RegistryEntry.of(END_COBALT_ORE_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(20),
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
 
@@ -207,8 +193,21 @@ public class ConfigurationFeatures {
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("essmetals", "silver_ore")));
         //Nickel
-
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "nickel_ore"), OVERWORLD_NICKEL_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "nickel_ore"),
+                OVERWORLD_NICKEL_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "nickel_ore")));
         //Bauxite
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "bauxite_ore"), OVERWORLD_BAUXITE_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "bauxite_ore"),
+                OVERWORLD_BAUXITE_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "bauxite_ore")));
 
         //Titanium
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
@@ -226,13 +225,5 @@ public class ConfigurationFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("essmetals", "end_tungsten_ore")));
-        ///Test1
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier("essmetals", "end_cobalt_ore"), END_COBALT_ORE_CONFIGURED_FEATURE);
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "end_cobalt_ore"),
-                END_COBALT_ORE_PLACED_FEATURE);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
-                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
-                        new Identifier("essmetals", "end_cobalt_ore")));
     }
 }
