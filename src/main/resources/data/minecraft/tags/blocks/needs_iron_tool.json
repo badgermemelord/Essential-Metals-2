@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "essmetals:silver_block",
+    "essmetals:silver_ore",
+    "essmetals:cobalt_block",
+    "essmetals:cobalt_ore"
+  ]
+}

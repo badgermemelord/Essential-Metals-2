@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "essmetals",
+  "version": "${version}",
+
+  "name": "Essential Metals",
+  "description": "Les Metaux",
+  "authors": [
+    "SirWashington"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/essmetals/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.wash.essmetals.Essmetals"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "essmetals:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "essmetals:tin_block",
+    "count": 1
+  }
+}

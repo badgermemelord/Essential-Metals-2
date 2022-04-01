@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "essmetals:item/cobalt_pickaxe"
+  }
+}

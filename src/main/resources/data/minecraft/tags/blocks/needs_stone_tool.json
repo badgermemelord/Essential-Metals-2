@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "essmetals:tin_block",
+    "essmetals:tin_ore",
+    "essmetals:zinc_block",
+    "essmetals:zinc_ore",
+    "essmetals:copper_block",
+    "essmetals:copper_ore",
+    "essmetals:lead_block",
+    "essmetals:lead_ore"
+  ]
+}

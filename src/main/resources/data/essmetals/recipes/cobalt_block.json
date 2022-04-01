@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "essmetals:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "essmetals:cobalt_block",
+    "count": 1
+  }
+}

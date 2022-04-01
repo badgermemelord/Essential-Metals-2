@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "essmetals:cobalt_ore"
+  },
+  "result": "essmetals:cobalt_ingot",
+  "experience": 0.1,
+  "cookingtime": 200
+}
