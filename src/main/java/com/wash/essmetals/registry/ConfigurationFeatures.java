@@ -27,12 +27,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.COBALT_ORE.getDefaultState(),
-                    6
+                    Config.Worldgen.CoSize
             ));
     public static PlacedFeature OVERWORLD_COBALT_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_COBALT_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4),
+                    CountPlacementModifier.of(Config.Worldgen.CoRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-8), YOffset.fixed(24))
             ));
@@ -41,12 +41,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.TIN_ORE.getDefaultState(),
-                    6
+                    Config.Worldgen.SnSize
             ));
     public static PlacedFeature OVERWORLD_TIN_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_TIN_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(6),
+                    CountPlacementModifier.of(Config.Worldgen.SnRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(16), YOffset.fixed(64))
             ));
@@ -55,12 +55,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.ZINC_ORE.getDefaultState(),
-                    6
+                    Config.Worldgen.ZnSize
             ));
     public static PlacedFeature OVERWORLD_ZINC_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_ZINC_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4),
+                    CountPlacementModifier.of(Config.Worldgen.ZnRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(32), YOffset.fixed(48))
             ));
@@ -69,12 +69,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.LEAD_ORE.getDefaultState(),
-                    8
+                    Config.Worldgen.PbSize
             ));
     public static PlacedFeature OVERWORLD_LEAD_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_LEAD_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(6),
+                    CountPlacementModifier.of(Config.Worldgen.PbRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-8), YOffset.fixed(16))
             ));
@@ -83,12 +83,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.SILVER_ORE.getDefaultState(),
-                    4
+                    Config.Worldgen.AgSize
             ));
     public static PlacedFeature OVERWORLD_SILVER_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_SILVER_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4),
+                    CountPlacementModifier.of(Config.Worldgen.AgRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(32))
             ));
@@ -97,12 +97,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.NICKEL_ORE.getDefaultState(),
-                    4
+                    Config.Worldgen.NiSize
             ));
     public static PlacedFeature OVERWORLD_NICKEL_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_NICKEL_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(5),
+                    CountPlacementModifier.of(Config.Worldgen.NiRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(16), YOffset.fixed(42))
             ));
@@ -111,12 +111,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.BAUXITE_ORE.getDefaultState(),
-                    6
+                    Config.Worldgen.AlSize
             ));
     public static PlacedFeature OVERWORLD_BAUXITE_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_BAUXITE_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(12),
+                    CountPlacementModifier.of(Config.Worldgen.AlRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(86), YOffset.fixed(172))
             ));
@@ -127,12 +127,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     ModBlocks.DEEPSLATE_COBALT_ORE.getDefaultState(),
-                    6
+                    Config.Worldgen.CoSize
             ));
     public static PlacedFeature OVERWORLD_DEEPSLATE_COBALT_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_DEEPSLATE_COBALT_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4),
+                    CountPlacementModifier.of(Config.Worldgen.CoRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(8))
             ));
@@ -141,12 +141,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     ModBlocks.DEEPSLATE_LEAD_ORE.getDefaultState(),
-                    8
+                    Config.Worldgen.PbSize
             ));
     public static PlacedFeature OVERWORLD_DEEPSLATE_LEAD_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_DEEPSLATE_LEAD_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(6),
+                    CountPlacementModifier.of(Config.Worldgen.PbRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-48), YOffset.fixed(-8))
             ));
@@ -155,12 +155,12 @@ public class ConfigurationFeatures {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     ModBlocks.DEEPSLATE_SILVER_ORE.getDefaultState(),
-                    4
+                    Config.Worldgen.AgSize
             ));
     public static PlacedFeature OVERWORLD_DEEPSLATE_SILVER_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_DEEPSLATE_SILVER_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4),
+                    CountPlacementModifier.of(Config.Worldgen.AgRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(8))
             ));
@@ -172,12 +172,12 @@ public class ConfigurationFeatures {
             Feature.ORE, new OreFeatureConfig(
                     new BlockMatchRuleTest(Blocks.END_STONE),
                     ModBlocks.TITANIUM_ORE.getDefaultState(),
-                    4
+            Config.Worldgen.TiSize
             ));
     public static PlacedFeature END_TITANIUM_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(END_TITANIUM_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(1),
+                    CountPlacementModifier.of(Config.Worldgen.TiRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(15))
             ));
@@ -186,12 +186,12 @@ public class ConfigurationFeatures {
             Feature.ORE, new OreFeatureConfig(
             new BlockMatchRuleTest(Blocks.END_STONE),
             ModBlocks.TUNGSTEN_ORE.getDefaultState(),
-            4
+            Config.Worldgen.WSize
     ));
     public static PlacedFeature END_TUNGSTEN_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(END_TUNGSTEN_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(10),
+                    CountPlacementModifier.of(Config.Worldgen.WRate),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(48))
             ));
