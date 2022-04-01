@@ -43,6 +43,9 @@ public class ModItems {
     public static final BlockItem TUNGSTEN_ORE = new BlockItem(ModBlocks.TUNGSTEN_ORE, new Item.Settings());
     public static final BlockItem NICKEL_ORE = new BlockItem(ModBlocks.NICKEL_ORE, new Item.Settings());
     public static final BlockItem BAUXITE_ORE = new BlockItem(ModBlocks.BAUXITE_ORE, new Item.Settings());
+    public static final BlockItem DEEPSLATE_COBALT_ORE = new BlockItem(ModBlocks.DEEPSLATE_COBALT_ORE, new Item.Settings());
+    public static final BlockItem DEEPSLATE_LEAD_ORE = new BlockItem(ModBlocks.DEEPSLATE_LEAD_ORE, new Item.Settings());
+    public static final BlockItem DEEPSLATE_SILVER_ORE = new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE, new Item.Settings());
 
     public static final BlockItem TIN_BLOCK = new BlockItem(ModBlocks.TIN_BLOCK, new Item.Settings());
     public static final BlockItem ZINC_BLOCK = new BlockItem(ModBlocks.ZINC_BLOCK, new Item.Settings());
@@ -153,6 +156,9 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_ore"), NICKEL_ORE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "bauxite_ore"), BAUXITE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_cobalt_ore"), DEEPSLATE_COBALT_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_lead_ore"), DEEPSLATE_LEAD_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
 
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_block"), TIN_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "zinc_block"), ZINC_BLOCK);

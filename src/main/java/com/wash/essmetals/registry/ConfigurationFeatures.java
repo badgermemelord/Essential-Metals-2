@@ -76,7 +76,7 @@ public class ConfigurationFeatures {
             Arrays.asList(
                     CountPlacementModifier.of(6),
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(-32), YOffset.fixed(16))
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-8), YOffset.fixed(16))
             ));
     //Silver
     private static ConfiguredFeature<?, ?> OVERWORLD_SILVER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
@@ -120,7 +120,53 @@ public class ConfigurationFeatures {
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(86), YOffset.fixed(172))
             ));
+    //Deepslate Ores
+
+    //Deepslate Cobalt
+    private static ConfiguredFeature<?, ?> OVERWORLD_DEEPSLATE_COBALT_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_COBALT_ORE.getDefaultState(),
+                    6
+            ));
+    public static PlacedFeature OVERWORLD_DEEPSLATE_COBALT_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(OVERWORLD_DEEPSLATE_COBALT_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(4),
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(8))
+            ));
+    //Deepslate Lead
+    private static ConfiguredFeature<?, ?> OVERWORLD_DEEPSLATE_LEAD_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_LEAD_ORE.getDefaultState(),
+                    8
+            ));
+    public static PlacedFeature OVERWORLD_DEEPSLATE_LEAD_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(OVERWORLD_DEEPSLATE_LEAD_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(6),
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-48), YOffset.fixed(-8))
+            ));
+    //Deepslate Silver
+    private static ConfiguredFeature<?, ?> OVERWORLD_DEEPSLATE_SILVER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_SILVER_ORE.getDefaultState(),
+                    4
+            ));
+    public static PlacedFeature OVERWORLD_DEEPSLATE_SILVER_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(OVERWORLD_DEEPSLATE_SILVER_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(4),
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(8))
+            ));
+
     //End Ores
+
     //Titanium
     private static ConfiguredFeature<?, ?> END_TITANIUM_ORE_CONFIGURED_FEATURE = new ConfiguredFeature(
             Feature.ORE, new OreFeatureConfig(
@@ -208,7 +254,32 @@ public class ConfigurationFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("essmetals", "bauxite_ore")));
-
+        //Deepslate Ores
+        //Deepslate Cobalt
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "deepslate_cobalt_ore"), OVERWORLD_DEEPSLATE_COBALT_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "deepslate_cobalt_ore"),
+                OVERWORLD_DEEPSLATE_COBALT_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "deepslate_cobalt_ore")));
+        //Deepslate Lead
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "deepslate_lead_ore"), OVERWORLD_DEEPSLATE_LEAD_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "deepslate_lead_ore"),
+                OVERWORLD_DEEPSLATE_LEAD_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "deepslate_lead_ore")));
+        //Deepslate Silver
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "deepslate_silver_ore"), OVERWORLD_DEEPSLATE_SILVER_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "deepslate_silver_ore"),
+                OVERWORLD_DEEPSLATE_SILVER_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "deepslate_silver_ore")));
+        //End Ores
         //Titanium
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier("essmetals", "titanium_ore"), END_TITANIUM_ORE_CONFIGURED_FEATURE);
@@ -225,5 +296,6 @@ public class ConfigurationFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("essmetals", "end_tungsten_ore")));
+
     }
 }
