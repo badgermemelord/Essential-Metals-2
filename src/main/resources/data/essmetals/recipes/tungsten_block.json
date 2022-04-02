@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "tag": "c:silver_ingots"
+      "tag": "c:tungsten_ingots"
     }
   },
   "result": {
-    "item": "essmetals:silver_block",
+    "item": "essmetals:tungsten_block",
     "count": 1
   }
 }

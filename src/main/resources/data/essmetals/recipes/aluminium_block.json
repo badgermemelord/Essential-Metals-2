@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "tag": "c:silver_ingots"
+      "tag": "c:aluminum_ingots"
     }
   },
   "result": {
-    "item": "essmetals:silver_block",
+    "item": "essmetals:aluminium_block",
     "count": 1
   }
 }

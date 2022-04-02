@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "tag": "c:silver_ingots"
+      "tag": "c:titanium_ingots"
     }
   },
   "result": {
-    "item": "essmetals:silver_block",
+    "item": "essmetals:titanium_block",
     "count": 1
   }
 }
