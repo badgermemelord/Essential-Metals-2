@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "essmetals:zinc_block"
+    }
+  ],
+  "result": {
+    "item": "essmetals:zinc_ingot",
+    "count": 9
+  }
+}

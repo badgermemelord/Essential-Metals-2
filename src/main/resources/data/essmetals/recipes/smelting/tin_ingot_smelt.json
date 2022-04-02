@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "essmetals:tin_ore"
+    "item": "essmetals:raw_tin"
   },
   "result": "essmetals:tin_ingot",
   "experience": 0.1,

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "essmetals:cobalt_block"
+    }
+  ],
+  "result": {
+    "item": "essmetals:cobalt_ingot",
+    "count": 9
+  }
+}

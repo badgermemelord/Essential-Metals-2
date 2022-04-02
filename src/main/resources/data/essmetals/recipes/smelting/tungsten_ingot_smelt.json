@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "essmetals:raw_tungsten"
+  },
+  "result": "essmetals:tungsten_ingot",
+  "experience": 0.8,
+  "cookingtime": 200
+}

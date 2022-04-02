@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "essmetals:nickel_block"
+    }
+  ],
+  "result": {
+    "item": "essmetals:nickel_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "essmetals:silver_block"
+    }
+  ],
+  "result": {
+    "item": "essmetals:silver_ingot",
+    "count": 9
+  }
+}

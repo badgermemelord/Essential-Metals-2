@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "essmetals:tin_block"
+    }
+  ],
+  "result": {
+    "item": "essmetals:tin_ingot",
+    "count": 9
+  }
+}
