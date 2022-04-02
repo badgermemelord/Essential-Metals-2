@@ -145,6 +145,21 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "lead_leggings"), LeadArmor.LEAD_MATERIAL_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "lead_boots"), LeadArmor.LEAD_MATERIAL_BOOTS);
 
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_helmet"), NickelArmor.NICKEL_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_chestplate"), NickelArmor.NICKEL_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_leggings"), NickelArmor.NICKEL_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_boots"), NickelArmor.NICKEL_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_helmet"), AluminiumArmor.ALUMINIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_chestplate"), AluminiumArmor.ALUMINIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_leggings"), AluminiumArmor.ALUMINIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_boots"), AluminiumArmor.ALUMINIUM_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_helmet"), TitaniumArmor.TITANIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_chestplate"), TitaniumArmor.TITANIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_leggings"), TitaniumArmor.TITANIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_boots"), TitaniumArmor.TITANIUM_BOOTS);
+
 
         //blockitems
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_ore"), TIN_ORE);
