@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "essmetals:tin_ore"
+          "name": "essmetals:raw_tungsten"
         }
       ]
     }

@@ -21,6 +21,16 @@ public class ModItems {
     public static final Item TUNGSTEN_INGOT = new Item(new Item.Settings());
     public static final Item NICKEL_INGOT = new Item(new Item.Settings());
     public static final Item ALUMINIUM_INGOT = new Item(new Item.Settings());
+        //nuggets
+    public static final Item TIN_NUGGET = new Item(new Item.Settings());
+    public static final Item COBALT_NUGGET = new Item(new Item.Settings());
+    public static final Item SILVER_NUGGET = new Item(new Item.Settings());
+    public static final Item LEAD_NUGGET = new Item(new Item.Settings());
+    public static final Item ZINC_NUGGET = new Item(new Item.Settings());
+    public static final Item TITANIUM_NUGGET = new Item(new Item.Settings());
+    public static final Item TUNGSTEN_NUGGET = new Item(new Item.Settings());
+    public static final Item NICKEL_NUGGET = new Item(new Item.Settings());
+    public static final Item ALUMINIUM_NUGGET = new Item(new Item.Settings());
 
         //Raw Metals
     public static final Item RAW_TIN = new Item(new Item.Settings());
@@ -75,6 +85,17 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_ingot"), TUNGSTEN_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_ingot"), NICKEL_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_ingot"), ALUMINIUM_INGOT);
+
+            //Nuggets
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_nugget"), TIN_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_nugget"), COBALT_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "silver_nugget"), SILVER_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "lead_nugget"), LEAD_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "zinc_nugget"), ZINC_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_nugget"), TITANIUM_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_nugget"), TUNGSTEN_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_nugget"), NICKEL_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_nugget"), ALUMINIUM_NUGGET);
 
             //Raw Metals
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_cobalt"), RAW_COBALT);
