@@ -4,18 +4,18 @@ import com.wash.essmetals.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class CobaltToolMaterial implements ToolMaterial {
+public class NickelToolMaterial implements ToolMaterial {
 
-    public static final CobaltToolMaterial INSTANCE = new CobaltToolMaterial();
+    public static final NickelToolMaterial INSTANCE = new NickelToolMaterial();
 
     @Override
     public int getDurability() {
-        return 750;
+        return 250;
     }
 
     @Override
     public float getMiningSpeedMultiplier(){
-        return 7.0f;
+        return 6.0f;
     }
 
     @Override
@@ -24,16 +24,18 @@ public class CobaltToolMaterial implements ToolMaterial {
     }
 
     @Override
-    public int getMiningLevel() {return 3;}
+    public int getMiningLevel() {
+        return 2;
+    }
 
     @Override
     public int getEnchantability() {
-        return 5;
+        return 4;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.COBALT_INGOT, ModItems.COBALT_BLOCK);
+        return Ingredient.ofItems(ModItems.NICKEL_INGOT, ModItems.NICKEL_BLOCK, ModItems.NICKEL_NUGGET);
     }
 
 }

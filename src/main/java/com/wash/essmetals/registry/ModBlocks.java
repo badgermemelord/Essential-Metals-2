@@ -84,6 +84,12 @@ public class ModBlocks {
             .strength(3.0f, 3.0f)
             .sounds(BlockSoundGroup.STONE)
     );
+    public static final Block DEEPSLATE_URANIUM_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .requiresTool()
+            .strength(3.0f, 3.0f)
+            .sounds(BlockSoundGroup.STONE)
+    );
 
     //blocks
     public static final Block TIN_BLOCK = new Block(FabricBlockSettings
@@ -140,6 +146,12 @@ public class ModBlocks {
             .strength(3.0f, 3.0f)
             .sounds(BlockSoundGroup.METAL)
     );
+    public static final Block URANIUM_BLOCK = new Block(FabricBlockSettings
+            .of(Material.METAL)
+            .requiresTool()
+            .strength(3.0f, 3.0f)
+            .sounds(BlockSoundGroup.METAL)
+    );
     //derivatives
 
     public static void registerBlocks() {
@@ -157,6 +169,8 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "nickel_ore"), NICKEL_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "bauxite_ore"), BAUXITE_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "deepslate_uranium_ore"), DEEPSLATE_URANIUM_ORE);
+
 
 
         //blocks
@@ -169,6 +183,8 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "tungsten_block"), TUNGSTEN_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "nickel_block"), NICKEL_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Essmetals.MOD_ID, "uranium_block"), URANIUM_BLOCK);
+
 
 
 

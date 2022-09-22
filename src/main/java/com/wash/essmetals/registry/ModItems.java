@@ -21,7 +21,9 @@ public class ModItems {
     public static final Item TUNGSTEN_INGOT = new Item(new Item.Settings());
     public static final Item NICKEL_INGOT = new Item(new Item.Settings());
     public static final Item ALUMINIUM_INGOT = new Item(new Item.Settings());
-        //nuggets
+    public static final Item URANIUM_INGOT = new Item(new Item.Settings());
+
+    //nuggets
     public static final Item TIN_NUGGET = new Item(new Item.Settings());
     public static final Item COBALT_NUGGET = new Item(new Item.Settings());
     public static final Item SILVER_NUGGET = new Item(new Item.Settings());
@@ -31,8 +33,9 @@ public class ModItems {
     public static final Item TUNGSTEN_NUGGET = new Item(new Item.Settings());
     public static final Item NICKEL_NUGGET = new Item(new Item.Settings());
     public static final Item ALUMINIUM_NUGGET = new Item(new Item.Settings());
+    public static final Item URANIUM_NUGGET = new Item(new Item.Settings());
 
-        //Raw Metals
+    //Raw Metals
     public static final Item RAW_TIN = new Item(new Item.Settings());
     public static final Item RAW_COBALT = new Item(new Item.Settings());
     public static final Item RAW_ZINC = new Item(new Item.Settings());
@@ -42,6 +45,7 @@ public class ModItems {
     public static final Item RAW_TUNGSTEN = new Item(new Item.Settings());
     public static final Item RAW_NICKEL = new Item(new Item.Settings());
     public static final Item RAW_ALUMINIUM = new Item(new Item.Settings());
+    public static final Item RAW_URANIUM = new Item(new Item.Settings());
 
         //Block Items
     public static final BlockItem TIN_ORE = new BlockItem(ModBlocks.TIN_ORE, new Item.Settings());
@@ -56,6 +60,7 @@ public class ModItems {
     public static final BlockItem DEEPSLATE_COBALT_ORE = new BlockItem(ModBlocks.DEEPSLATE_COBALT_ORE, new Item.Settings());
     public static final BlockItem DEEPSLATE_LEAD_ORE = new BlockItem(ModBlocks.DEEPSLATE_LEAD_ORE, new Item.Settings());
     public static final BlockItem DEEPSLATE_SILVER_ORE = new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE, new Item.Settings());
+    public static final BlockItem DEEPSLATE_URANIUM_ORE = new BlockItem(ModBlocks.DEEPSLATE_URANIUM_ORE, new Item.Settings());
 
     public static final BlockItem TIN_BLOCK = new BlockItem(ModBlocks.TIN_BLOCK, new Item.Settings());
     public static final BlockItem ZINC_BLOCK = new BlockItem(ModBlocks.ZINC_BLOCK, new Item.Settings());
@@ -66,16 +71,13 @@ public class ModItems {
     public static final BlockItem TUNGSTEN_BLOCK = new BlockItem(ModBlocks.TUNGSTEN_BLOCK, new Item.Settings());
     public static final BlockItem NICKEL_BLOCK = new BlockItem(ModBlocks.NICKEL_BLOCK, new Item.Settings());
     public static final BlockItem ALUMINIUM_BLOCK = new BlockItem(ModBlocks.ALUMINIUM_BLOCK, new Item.Settings());
+    public static final BlockItem URANIUM_BLOCK = new BlockItem(ModBlocks.URANIUM_BLOCK, new Item.Settings());
 
 
-
+    //items
     public static void registerItems() {
 
-
-
-        //items
-
-            //Ingots
+        //Ingots
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_ingot"), TIN_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_ingot"), COBALT_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "silver_ingot"), SILVER_INGOT);
@@ -85,8 +87,9 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_ingot"), TUNGSTEN_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_ingot"), NICKEL_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_ingot"), ALUMINIUM_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "uranium_ingot"), URANIUM_INGOT);
 
-            //Nuggets
+        //Nuggets
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_nugget"), TIN_NUGGET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_nugget"), COBALT_NUGGET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "silver_nugget"), SILVER_NUGGET);
@@ -96,8 +99,9 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_nugget"), TUNGSTEN_NUGGET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_nugget"), NICKEL_NUGGET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_nugget"), ALUMINIUM_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "uranium_nugget"), URANIUM_NUGGET);
 
-            //Raw Metals
+        //Raw Metals
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_cobalt"), RAW_COBALT);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_tin"), RAW_TIN);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_zinc"), RAW_ZINC);
@@ -107,8 +111,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_tungsten"), RAW_TUNGSTEN);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_nickel"), RAW_NICKEL);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_aluminium"), RAW_ALUMINIUM);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "raw_uranium"), RAW_URANIUM);
 
-            //Tools
+
+        //Tools
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_pickaxe"), TinTools.TIN_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_axe"), TinTools.TIN_AXE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_shovel"), TinTools.TIN_SHOVEL);
@@ -139,9 +145,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "silver_hoe"), SilverTools.SILVER_HOE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "silver_sword"), SilverTools.SILVER_SWORD);
 
-            //Armor
-
-        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_helmet"), CobaltArmor.COBALT_HELMET);
+        //Armor
+        /*Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_helmet"), CobaltArmor.COBALT_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_chestplate"), CobaltArmor.COBALT_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_leggings"), CobaltArmor.COBALT_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "cobalt_boots"), CobaltArmor.COBALT_BOOTS);
@@ -179,7 +184,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_helmet"), TitaniumArmor.TITANIUM_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_chestplate"), TitaniumArmor.TITANIUM_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_leggings"), TitaniumArmor.TITANIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_boots"), TitaniumArmor.TITANIUM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "titanium_boots"), TitaniumArmor.TITANIUM_BOOTS);*/
 
 
         //blockitems
@@ -195,6 +200,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_cobalt_ore"), DEEPSLATE_COBALT_ORE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_lead_ore"), DEEPSLATE_LEAD_ORE);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "deepslate_uranium_ore"), DEEPSLATE_URANIUM_ORE);
 
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tin_block"), TIN_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "zinc_block"), ZINC_BLOCK);
@@ -205,5 +211,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "tungsten_block"), TUNGSTEN_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "nickel_block"), NICKEL_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Essmetals.MOD_ID, "uranium_block"), URANIUM_BLOCK);
+
     }
 }

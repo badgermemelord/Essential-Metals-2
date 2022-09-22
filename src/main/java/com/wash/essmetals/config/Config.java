@@ -32,6 +32,9 @@ public class Config {
         //Bauxite
         public static int AlSize = 6;
         public static int AlRate = 12;
+        //Uranium
+        public static int USize = 8;
+        public static int URate = 8;
     }
 
 

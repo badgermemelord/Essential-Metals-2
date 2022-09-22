@@ -10,6 +10,7 @@
   "item.essmetals.aluminium_ingot": "Aluminium Ingot",
   "item.essmetals.titanium_ingot": "Titanium Ingot",
   "item.essmetals.tungsten_ingot": "Tungsten Ingot",
+  "item.essmetals.uranium_ingot": "Uranium Ingot",
 
   "item.essmetals.raw_tin": "Raw Tin",
   "item.essmetals.raw_cobalt": "Raw Cobalt",
@@ -20,6 +21,8 @@
   "item.essmetals.raw_nickel": "Raw Nickel",
   "item.essmetals.raw_titanium": "Raw Titanium",
   "item.essmetals.raw_tungsten": "Raw Tungsten",
+  "item.essmetals.raw_uranium": "Raw Uranium",
+
 
   "block.essmetals.tin_ore": "Tin Ore",
   "block.essmetals.zinc_ore": "Zinc Ore",
@@ -34,6 +37,8 @@
   "block.essmetals.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.essmetals.deepslate_lead_ore": "Deepslate Lead Ore",
   "block.essmetals.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.essmetals.deepslate_uranium_ore": "Deepslate Uranium Ore",
+
 
   "block.essmetals.tin_block": "Tin Block",
   "block.essmetals.cobalt_block": "Cobalt Block",
@@ -44,6 +49,7 @@
   "block.essmetals.aluminium_block": "Aluminium Block",
   "block.essmetals.titanium_block": "Titanium Block",
   "block.essmetals.tungsten_block": "Tungsten Block",
+  "block.essmetals.uraanium_block": "Uranium Block",
 
   "itemGroup.essmetals.basic": "Essential Metals Basic",
   "itemGroup.essmetals.items": "Essential Metals Items"

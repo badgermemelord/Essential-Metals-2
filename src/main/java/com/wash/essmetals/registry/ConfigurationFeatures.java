@@ -164,6 +164,20 @@ public class ConfigurationFeatures {
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(8))
             ));
+    //Deepslate Uranium
+    private static ConfiguredFeature<?, ?> OVERWORLD_DEEPSLATE_URANIUM_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_URANIUM_ORE.getDefaultState(),
+                    Config.Worldgen.USize
+            ));
+    public static PlacedFeature OVERWORLD_DEEPSLATE_URANIUM_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(OVERWORLD_DEEPSLATE_URANIUM_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(Config.Worldgen.URate),
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(-32))
+            ));
 
     //End Ores
 
@@ -279,6 +293,14 @@ public class ConfigurationFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("essmetals", "deepslate_silver_ore")));
+        //Deepslate Uranium
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier("essmetals", "deepslate_uranium_ore"), OVERWORLD_DEEPSLATE_URANIUM_ORE_CONFIGURED_FEATURE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("essmetals", "deepslate_uranium_ore"),
+                OVERWORLD_DEEPSLATE_URANIUM_ORE_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier("essmetals", "deepslate_uranium_ore")));
         //End Ores
         //Titanium
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
